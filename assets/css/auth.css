@@ -1,0 +1,22 @@
+.containerSignup {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.inerContainer {
+  background-color: #fff;
+  width: 550px;
+  min-width: 335px;
+  padding: 15px;
+  margin: 50px 20px;
+  text-align: center;
+  border: 1.5px solid black;
+  border-radius: 6px;
+}
+.containerSignup form input {
+  margin: 32px auto;
+  width: 87%;
+}
+.note span {
+  color: gray;
+}

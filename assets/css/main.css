@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  min-height: 100vh;
+  position: relative;
+  background: rgb(14, 32, 112);
+  background: linear-gradient(
+    158deg,
+    rgb(22, 32, 175) 33%,
+    rgba(85, 118, 226, 1) 66%
+  );
+  margin-bottom: 65px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.containerFilter {
+  width: 350px;
+  margin: 15px auto;
+}
+.containerFilter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerFilter select {
+  text-transform: capitalize;
+  outline: none;
+  width: 236px;
+}
+.filterBtn {
+  width: 100px;
+  height: 35px;
+  margin: 7px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background-color: #a02e1a;
+  color: #fff;
+}
+.headcard {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titlenav {
+  font-size: 19px;
+  color: rgb(207, 65, 65);
+  font-weight: bold;
+}
+.containerCards {
+  max-width: 1300px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1.5px solid #212529;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+  text-align: center;
+  padding: 5px;
+  width: 300px;
+  background-color: white;
+}
+.card img {
+  width: auto;
+  max-width: 286px;
+  max-height: 300px;
+}
+.card .card-title {
+  margin: 10px;
+}
+.card .card-title a {
+  text-decoration: none;
+  color: rgb(207, 65, 65);
+  font-size: 26px;
+}
+.card .card-title p {
+  margin-top: 10px;
+}
+.card-title p span {
+  color: green;
+}
+.card input {
+  text-align: center;
+}
+.btnMe {
+  padding: 7px 12px;
+  margin: 7px;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  background-color: #212529;
+}
+.btnMe:hover {
+  color: rgb(20, 161, 107);
+}
+.btnreversed {
+  border: none;
+  padding: 8px 13px;
+  background-color: #a02e1a;
+  color: #212529;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+}
+@media (min-width: 776px) {
+  .titlenav {
+    padding: 0 40px;
+  }
+}
+/* START DEATEILLED CARD */
+.containerDetailledCard {
+  column-gap: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.containerDetailledCard .leftSideCard {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 330px;
+  max-width: 500px;
+}
+.leftSideCard .imgContainer {
+  padding: 3em;
+}
+.containerDetailledCard .rightSideCard {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.459);
+  min-width: 330px;
+  max-width: 400px;
+}
+.rightSideCard .card-title a {
+  text-decoration: none;
+  color: #a02e1a;
+}
+@media (max-width: 885px) {
+  .containerDetailledCard .leftSideCard,
+  .containerDetailledCard .rightSideCard {
+    margin: 10px auto;
+    width: 355px;
+  }
+  .leftSideCard .imgContainer {
+    padding: 6px;
+  }
+}
+.alert {
+  padding: 11px;
+}
+.containerSignup form input {
+  margin: 0 auto;
+}
+.wrong {
+  color: rgb(255, 0, 0);
+  display: flex;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 14px;
+  align-items: flex-start;
+  width: 449px;
+  min-height: 47px;
+}
+.containerItems {
+  background-color: #fff;
+  max-width: 870px;
+  margin: 50px auto;
+  padding: 20px;
+}
+td {
+  padding: 6px;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+table {
+  width: 100%;
+}
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  word-spacing: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #964d09;
+  font-weight: bold;
+}

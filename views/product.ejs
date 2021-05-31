@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('parts/header.ejs') %>
+  <body>
+    <%- include('parts/navbar.ejs') %> <% if(validationError){ %>
+    <p class="alert alert-danger"><%= validationError.msg %></p>
+    <% } %>
+    <div class="containerDetailledCard">
+      <% if(!product) {%>
+      <div>la</div>
+      <% }else{ %>
+      <div class="leftSideCard">
+        <div class="imgContainer">
+          <img src="/<%= product.image %>" class="card-img-top" />
+        </div>
+      </div>
+      <div class="rightSideCard">
+        <h5 class="card-title">
+          <a href="/product/<%= product._id %>"><%= product.name %></a>
+          <br /><br />
+          <p>Price: <%= product.price %> <span>$</span></p>
+        </h5>
+        <p><%= product.description %></p>
+        <form action="/cart" method="POST">
+          <input type="number" name="amount" class="form-control" />
+          <input type="hidden" name="name" value="<%= product.name %> " />
+          <input type="hidden" name="price" value="<%= product.price %> " />
+          <input type="hidden" name="productId" value="<%= product._id %> " />
+          <input type="hidden" name="redirectTo" value="/" />
+          <input type="submit" value="Add to cart" class="btnMe" />
+        </form>
+      </div>
+      <% } %>
+    </div>
+    <%- include('parts/footer.ejs') %>
+  </body>
+</html>

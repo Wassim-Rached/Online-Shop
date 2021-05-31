@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('parts/header.ejs') %>
+  <body>
+    <%- include('parts/navbar.ejs') %>
+    <div class="containerSignup">
+      <div class="inerContainer">
+        <h3>Login</h3>
+        <br />
+        <form action="/login" method="POST">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="E-mail"
+          />
+          <div class="wrong">
+            <% if(authError === "there is no user mathches this email") { %>
+            <%=authError %> <% } %>
+          </div>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+          />
+          <div class="wrong">
+            <% if(authError === "password is incorrect") { %> <%= authError %>
+            <% } %>
+          </div>
+          <input type="submit" value="Login" class="btnMe" />
+        </form>
+        <br />
+        <div class="note">
+          <span>Don't have account ?</span> <a href="/signup">Create account</a>
+        </div>
+        <br />
+      </div>
+    </div>
+    <%- include('parts/footer.ejs') %>
+  </body>
+</html>

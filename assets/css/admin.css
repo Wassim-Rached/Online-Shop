@@ -1,0 +1,26 @@
+.containerAdmin {
+  margin: 50px auto;
+  max-width: 95%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.418);
+  padding: 20px;
+}
+.containerAdmin > * {
+  margin: 0 auto;
+  width: 70%;
+  min-width: 300px;
+}
+.btnAdd {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: white;
+  border: none;
+  outline: none;
+  width: 160px;
+  padding: 8px 14px;
+}
+.title {
+  text-align: center;
+  color: #a02e1a;
+  margin: 20px auto;
+}
